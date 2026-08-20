@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Marita 🩷</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0f1115;
+            color: #d1d5db;
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* PANTALLA DE CONTRASEÑA */
+        #password-screen {
+            background-color: #161922;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #f472b6;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(244, 114, 182, 0.15);
+        }
+
+        #password-screen h2 {
+            color: #f3f4f6;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: normal;
+        }
+
+        #password-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #374151;
+            background-color: #0f1115;
+            color: #fff;
+            text-align: center;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        #password-button {
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: none;
+            background-color: #f472b6;
+            color: #0f1115;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        #password-button:hover {
+            background-color: #f472b6;
+            opacity: 0.9;
+        }
+
+        #error-message {
+            color: #ef4444;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            display: none;
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        #main-content {
+            display: none;
+            max-width: 700px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .container {
+            background-color: #161922;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #2a2f3d;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 1px solid #2a2f3d;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+
+        .header h1 {
+            color: #f472b6;
+            font-size: 2.2rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .section-card {
+            background-color: #1a1e29;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #2a2f3d;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #f472b6;
+            font-size: 1.2rem;
+            border-left: 3px solid #f472b6;
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+
+        .letter-text {
+            color: #9ca3af;
+            font-size: 0.98rem;
+            text-align: justify;
+            white-space: pre-line;
+        }
+
+        .img-container {
+            width: 100%;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid #f472b6;
+            box-shadow: 0 4px 15px rgba(244, 114, 182, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #2a2f3d;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PANTALLA DE CONTRASEÑA -->
+    <div id="password-screen">
+        <h2>Acceso Privado 🩷</h2>
+        <input type="password" id="password-input" placeholder="Ingresa la contraseña">
+        <button id="password-button" onclick="checkPassword()">Entrar 🌸</button>
+        <p id="error-message">Contraseña incorrecta</p>
+    </div>
+
+    <!-- CONTENIDO DE LA PÁGINA -->
+    <div id="main-content">
+        <div class="container">
+
+            <div class="header">
+                <h1>marita 🩷</h1>
+                <p>Un último mensaje de agradecimiento y despedida 🌸</p>
+            </div>
+
+            <!-- SECCIÓN 1: AGRADECIMIENTO -->
+            <div class="section-card">
+                <div class="section-title">Agradecimiento 🩷</div>
+                <div class="letter-text">
+si estás leyendo esto, solo quiero decirte que muchas gracias por todo lo lindo que me hiciste sentir y por lo feliz que fui durante estos dos meses. probablemente ya hayan pasado algunos días, y como te dije, consulté con tu hermana y le pedí que te enseñara nuestra conversación, mis preocupaciones y también todas esas cosas que yo nunca te dije de ti. no lo hice para que regreses ni para cambiar tu decisión, solamente sentí que después de todo lo que pasó había cosas que necesitaba decirte.
+
+muchas gracias por el amor que me diste, por cada cosa bonita que hiciste por mí y por todos esos momentos que tuvimos. al final fue una experiencia muy bonita para mí, y si yo también pude hacerte sentir feliz durante ese tiempo, entonces sinceramente me alegro muchísimo.
+                </div>
+            </div>
+
+            <!-- IMAGEN 1: MILKY DOG -->
+            <div class="img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-S4S8i5aUTo_35LgJ-e1K1T3i-1mD4aO-A&s" alt="Milky Dog - Just The Way You Are">
+            </div>
+
+            <!-- SECCIÓN 2: LO QUE PENSABA DE TI -->
+            <div class="section-card">
+                <div class="section-title">Lo que siempre pensé de ti 🌸</div>
+                <div class="letter-text">
+sabes que te amo, y aunque ya no estemos juntos, todavía me siguen gustando tus cachetitos lindos, especialmente tu lunarcito del lado izquierdo. esos cachetitos infladitos que se te veían tan bonitos y que en algún momento me hubiera gustado apretar y darte besitos chiquitos. y si alguna vez vuelves a sentirte insegura, por favor recuerda que yo siempre pensé que eras muy linda, pero no solamente por fuera. te admiré muchísimo por cómo eres por dentro, por tu forma de ser y por todo lo que intentabas hacer aunque muchas veces estuvieras cansada.
+
+quizás estos días sean difíciles para los dos, pero ya no voy a estar para ti de la misma manera en la que alguna vez prometí estar. si alguna vez sentiste que te fallé con eso, lo siento. yo realmente quería estar contigo y cumplirlo, pero las cosas terminaron tomando otro camino.
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3: ERRORES Y APRENDIZAJE -->
+            <div class="section-card">
+                <div class="section-title">Lo que lamento y aprendí 🩷</div>
+                <div class="letter-text">
+también lamento no haber sido el novio que tú necesitabas. lamento las veces que no supe entenderte, las veces que me dejé llevar por mis inseguridades y las veces que intenté presionarte para que me contaras cosas que todavía te costaban expresar. yo solamente quería conocerte mejor, entenderte y poder estar contigo, pero ahora entiendo que algunas cosas necesitan tiempo y que no puedo obligar a alguien a abrirse antes de estar preparado.
+
+quizás si hubiera tomado en cuenta muchas cosas, si te hubiera conocido mejor o si hubiera sabido manejar algunas partes de mí, algunas cosas habrían sido diferentes y quizás seguiríamos juntos. pero así es la vida. hay cosas que uno entiende demasiado tarde.
+
+y quiero que sepas algo: no quiero que pienses que todo esto fue culpa tuya. yo también tengo que aceptar mis errores y aprender de ellos. durante mucho tiempo sentí que todo lo malo que ocurría era culpa mía, pero ahora quiero aprender a reconocer mis errores sin destruirme por ellos.
+                </div>
+            </div>
+
+            <!-- IMAGEN 2: MILKY DOG -->
+            <div class="img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3y-B0a-jE9C7_sY6_7Jd3x6S5U_v-LgW4vg&s" alt="Milky Dog">
+            </div>
+
+            <!-- SECCIÓN 4: RECUERDOS Y CANCIÓN -->
+            <div class="section-card">
+                <div class="section-title">Nuestros recuerdos y detalles 🌸</div>
+                <div class="letter-text">
+cuídate mucho, maría, o mi marita. todavía me acuerdo muchísimo de cuando me decías “rafita”. para mí era de las cosas más bonitas que podías decirme.
+
+gracias por cuidar a los chiquillos. gracias por todas esas pequeñas cosas que solamente nosotros entendíamos. ya puedes borrar las aplicaciones que teníamos de pareja, aunque probablemente ya lo hayas hecho.
+
+y quiero que cuando escuches aquella canción del perrito recuerdes mi sonrisa y también todas esas lágrimas que alguna vez compartimos. la escuchábamos juntos, hacíamos karaoke, veíamos cualquier cosa y de ahí salieron algunas de nuestras palabras míticas que seguramente todavía recuerdas.
+
+“qué te pasaaaa?”
+“mañaña.”
+“descansa x1000.”
+
+y todas esas pequeñas cosas que probablemente para cualquier otra persona no significarían absolutamente nada, pero para nosotros fueron parte de esos dos meses. quédate con esos recuerdos si quieres. yo también me los voy a quedar.
+                </div>
+            </div>
+
+            <!-- SECCIÓN 5: DESEOS Y ÚLTIMO ADIÓS -->
+            <div class="section-card">
+                <div class="section-title">Para tu futuro y el último adiós 🩷</div>
+                <div class="letter-text">
+a ti sí quiero desearte buena suerte. espero que puedas conseguir todo lo que quieres, que progreses muchísimo y que logres todo eso que algún día me contaste. feliz cumpleaños cuando llegue, feliz año nuevo cuando corresponda y, aunque nunca lleguemos a ese cuarto mes que alguna vez imaginé, también te deseo un feliz cuarto mes donde sea que estés y con quien sea que estés. este sería mi regalo de despedida.
+
+y no quiero que cambies para mí. si algún día decides cambiar algo de ti, hazlo por tu propio beneficio y porque tú quieres ser mejor, no para demostrarle nada a nadie. no seas como las personas que alguna vez te hicieron daño. sigue creciendo, estudia, conviértete en esa gran abogada que quieres ser y consigue todo lo que te propongas. yo sé que puedes destacar muchísimo en la universidad y espero que algún día puedas mirar atrás y sentirte orgullosa de todo lo que lograste.
+
+come bien, descansa, cuídate cuando vengas de trabajar o de salir y no te olvides de ti misma. te lo dije muchas veces porque realmente me preocupaba que te exigieras demasiado.
+
+así que eso es todo, marita. ya no te voy a decir más. quédate con la intriga de todas esas cosas que nunca llegué a contarte. quizás algunas nunca tengan respuesta y está bien. no todo tiene que tener una respuesta.
+
+solamente quería que supieras que te quise de verdad. que te admiré. que me hiciste feliz. que aprendí muchísimo contigo. y que, aunque nuestra historia terminó antes de lo que yo quería, agradezco muchísimo haber podido vivirla.
+
+gracias por estos dos meses, mi marita. 🩷
+cuídate muchísimo.
+y espero que encuentres todo aquello que estás buscando.
+
+hasta nunca. 😸💗
+                </div>
+            </div>
+
+            <div class="footer">
+                Con respeto, cariño y los mejores deseos para tu camino. 🌸
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT DE VALIDACIÓN -->
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById('password-input').value;
+            const passwordScreen = document.getElementById('password-screen');
+            const mainContent = document.getElementById('main-content');
+            const errorMessage = document.getElementById('error-message');
+
+            if (passwordInput === "06102026") {
+                passwordScreen.style.display = "none";
+                mainContent.style.display = "block";
+            } else {
+                errorMessage.style.display = "block";
+            }
+        }
+
+        document.getElementById("password-input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                checkPassword();
+            }
+        });
+    </script>
+</body>
+</html>
