@@ -12,8 +12,8 @@
         }
 
         body {
-            background-color: #0f1115;
-            color: #d1d5db;
+            background-color: #f3f4f6;
+            color: #374151;
             font-family: 'Georgia', serif;
             line-height: 1.8;
             padding: 20px;
@@ -25,18 +25,18 @@
 
         /* PANTALLA DE CONTRASEÑA */
         #password-screen {
-            background-color: #161922;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #f472b6;
+            background-color: #ffffff;
+            padding: 35px 25px;
+            border-radius: 16px;
+            border: 1px solid #fbcfe8;
             text-align: center;
             max-width: 400px;
             width: 100%;
-            box-shadow: 0 10px 30px rgba(244, 114, 182, 0.15);
+            box-shadow: 0 10px 25px rgba(244, 114, 182, 0.15);
         }
 
         #password-screen h2 {
-            color: #f3f4f6;
+            color: #db2777;
             margin-bottom: 15px;
             font-size: 1.3rem;
             font-weight: normal;
@@ -44,36 +44,35 @@
 
         #password-input {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 15px;
-            border-radius: 6px;
-            border: 1px solid #374151;
-            background-color: #0f1115;
-            color: #fff;
+            border-radius: 8px;
+            border: 1px solid #f9a8d4;
+            background-color: #fff1f2;
+            color: #831843;
             text-align: center;
             font-size: 1rem;
             outline: none;
         }
 
         #password-button {
-            padding: 10px 20px;
-            border-radius: 6px;
+            padding: 12px 24px;
+            border-radius: 8px;
             border: none;
             background-color: #f472b6;
-            color: #0f1115;
+            color: #ffffff;
             font-weight: bold;
             cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.3s;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
         }
 
         #password-button:hover {
-            background-color: #f472b6;
-            opacity: 0.9;
+            background-color: #ec4899;
         }
 
         #error-message {
-            color: #ef4444;
+            color: #e11d48;
             font-size: 0.85rem;
             margin-top: 10px;
             display: none;
@@ -88,22 +87,22 @@
         }
 
         .container {
-            background-color: #161922;
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #2a2f3d;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            border: 1px solid #fbcfe8;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
         .header {
             text-align: center;
-            border-bottom: 1px solid #2a2f3d;
+            border-bottom: 1px solid #fbcfe8;
             padding-bottom: 25px;
             margin-bottom: 35px;
         }
 
         .header h1 {
-            color: #f472b6;
+            color: #db2777;
             font-size: 2.2rem;
             font-weight: normal;
             letter-spacing: 1px;
@@ -111,29 +110,29 @@
         }
 
         .header p {
-            color: #9ca3af;
+            color: #6b7280;
             font-size: 0.95rem;
             font-style: italic;
         }
 
         .section-card {
-            background-color: #1a1e29;
+            background-color: #fdf2f8;
             padding: 25px;
-            border-radius: 8px;
-            border: 1px solid #2a2f3d;
+            border-radius: 12px;
+            border: 1px solid #fbcfe8;
             margin-bottom: 30px;
         }
 
         .section-title {
-            color: #f472b6;
+            color: #db2777;
             font-size: 1.2rem;
-            border-left: 3px solid #f472b6;
+            border-left: 4px solid #f472b6;
             padding-left: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .letter-text {
-            color: #9ca3af;
+            color: #4b5563;
             font-size: 0.98rem;
             text-align: justify;
             white-space: pre-line;
@@ -141,24 +140,24 @@
 
         .img-container {
             width: 100%;
-            margin: 25px 0;
+            margin: 20px 0;
             text-align: center;
         }
 
         .img-container img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
-            border: 1px solid #f472b6;
-            box-shadow: 0 4px 15px rgba(244, 114, 182, 0.1);
+            border-radius: 12px;
+            border: 2px solid #fbcfe8;
+            box-shadow: 0 4px 12px rgba(244, 114, 182, 0.15);
         }
 
         .footer {
             text-align: center;
             margin-top: 40px;
             padding-top: 25px;
-            border-top: 1px solid #2a2f3d;
-            color: #6b7280;
+            border-top: 1px solid #fbcfe8;
+            color: #9ca3af;
             font-size: 0.9rem;
         }
     </style>
@@ -173,7 +172,7 @@
         <p id="error-message">Contraseña incorrecta</p>
     </div>
 
-    <!-- CONTENIDO DE LA PÁGINA -->
+    <!-- CONTENIDO PRINCIPAL DE LA PÁGINA -->
     <div id="main-content">
         <div class="container">
 
@@ -192,12 +191,7 @@ muchas gracias por el amor que me diste, por cada cosa bonita que hiciste por m�
                 </div>
             </div>
 
-            <!-- IMAGEN 1: MILKY DOG -->
-            <div class="img-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-S4S8i5aUTo_35LgJ-e1K1T3i-1mD4aO-A&s" alt="Milky Dog - Just The Way You Are">
-            </div>
-
-            <!-- SECCIÓN 2: LO QUE PENSABA DE TI -->
+            <!-- SECCIÓN 2: LO QUE SIEMPRE PENSÉ DE TI -->
             <div class="section-card">
                 <div class="section-title">Lo que siempre pensé de ti 🌸</div>
                 <div class="letter-text">
@@ -219,30 +213,37 @@ y quiero que sepas algo: no quiero que pienses que todo esto fue culpa tuya. yo 
                 </div>
             </div>
 
-            <!-- IMAGEN 2: MILKY DOG -->
-            <div class="img-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3y-B0a-jE9C7_sY6_7Jd3x6S5U_v-LgW4vg&s" alt="Milky Dog">
-            </div>
-
-            <!-- SECCIÓN 4: RECUERDOS Y CANCIÓN -->
+            <!-- SECCIÓN 4: RECUERDOS Y CANCIÓN DEL PERRITO (AQUÍ ESTÁN LAS IMÁGENES) -->
             <div class="section-card">
-                <div class="section-title">Nuestros recuerdos y detalles 🌸</div>
+                <div class="section-title">Nuestros recuerdos y la canción del perrito 🌸</div>
                 <div class="letter-text">
 cuídate mucho, maría, o mi marita. todavía me acuerdo muchísimo de cuando me decías “rafita”. para mí era de las cosas más bonitas que podías decirme.
 
 gracias por cuidar a los chiquillos. gracias por todas esas pequeñas cosas que solamente nosotros entendíamos. ya puedes borrar las aplicaciones que teníamos de pareja, aunque probablemente ya lo hayas hecho.
 
 y quiero que cuando escuches aquella canción del perrito recuerdes mi sonrisa y también todas esas lágrimas que alguna vez compartimos. la escuchábamos juntos, hacíamos karaoke, veíamos cualquier cosa y de ahí salieron algunas de nuestras palabras míticas que seguramente todavía recuerdas.
+                </div>
 
+                <!-- PRIMERA IMAGEN DE MILKY THE DOG -->
+                <div class="img-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-S4S8i5aUTo_35LgJ-e1K1T3i-1mD4aO-A&s" alt="Milky Dog - Just The Way You Are">
+                </div>
+
+                <div class="letter-text">
 “qué te pasaaaa?”
 “mañaña.”
 “descansa x1000.”
 
 y todas esas pequeñas cosas que probablemente para cualquier otra persona no significarían absolutamente nada, pero para nosotros fueron parte de esos dos meses. quédate con esos recuerdos si quieres. yo también me los voy a quedar.
                 </div>
+
+                <!-- SEGUNDA IMAGEN DE MILKY THE DOG -->
+                <div class="img-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3y-B0a-jE9C7_sY6_7Jd3x6S5U_v-LgW4vg&s" alt="Milky Dog">
+                </div>
             </div>
 
-            <!-- SECCIÓN 5: DESEOS Y ÚLTIMO ADIÓS -->
+            <!-- SECCIÓN 5: DESEOS FUTUROS Y ÚLTIMO ADIÓS -->
             <div class="section-card">
                 <div class="section-title">Para tu futuro y el último adiós 🩷</div>
                 <div class="letter-text">
